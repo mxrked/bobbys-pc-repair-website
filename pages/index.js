@@ -14,5 +14,9 @@ import "../assets/styles/modules/Index/Index.module.css";
 export default function Home() {
   const router = useRouter();
 
-  return "Home";
+  return (
+    <div id="PAGE">
+      <div id="PAGE_CNT">Home</div>
+    </div>
+  );
 }

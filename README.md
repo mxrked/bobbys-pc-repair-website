@@ -12,7 +12,8 @@ This is Bobby Torok's website for his PC Repair niche.
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Domain:
+Netlify Server: https://silly-puppy-27a32b.netlify.app/
 
 ===
 
@@ -26,6 +27,6 @@ Demo: PUT_SITE_URL_HERE
 
 ## Status
 
-PUT_NETLIFY_STATUS_CODE_HERE
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6542bdb3-c9ec-427e-b71d-52c482df3acf/deploy-status)](https://app.netlify.com/sites/silly-puppy-27a32b/deploys)
 
 ===
