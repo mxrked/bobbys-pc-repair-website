@@ -11,7 +11,7 @@ import path from "path";
 // Component Imports
 
 // Style Imports
-import "../assets/styles/modules/Index/Index.module.css";
+import "../assets/styles/modules/Contact/Contact.module.css";
 
 export async function getServerSideProps() {
   const PAGE_HEAD_DATA_DIRECTORY = "public/data/Page_Head_Data/";
@@ -23,26 +23,26 @@ export async function getServerSideProps() {
     PAGE_HEAD_DATA_DIRECTORY,
     "PH_Icons.json"
   );
-  const PH_INDEX_DATA_FP = path.join(
+  const PH_CONTACT_DATA_FP = path.join(
     process.cwd(),
     PAGE_HEAD_DATA_DIRECTORY,
-    "PH_Index.json"
+    "PH_Contact.json"
   );
 
   const PH_ICONS_DATA_FC = fs.readFileSync(PH_ICONS_DATA_FP, UTF8);
-  const PH_INDEX_DATA_FC = fs.readFileSync(PH_INDEX_DATA_FP, UTF8);
+  const PH_CONTACT_DATA_FC = fs.readFileSync(PH_CONTACT_DATA_FP, UTF8);
 
   let PH_ICONS_DATA = undefined;
-  let PH_INDEX_DATA = undefined;
+  let PH_CONTACT_DATA = undefined;
 
   try {
     PH_ICONS_DATA = JSON.parse(PH_ICONS_DATA_FC);
-    PH_INDEX_DATA = JSON.parse(PH_INDEX_DATA_FC);
+    PH_CONTACT_DATA = JSON.parse(PH_CONTACT_DATA_FC);
 
     return {
       props: {
         PH_ICONS_DATA,
-        PH_INDEX_DATA,
+        PH_CONTACT_DATA,
       },
     };
   } catch (error) {
@@ -51,18 +51,18 @@ export async function getServerSideProps() {
     return {
       props: {
         PH_ICONS_DATA: null,
-        PH_INDEX_DATA: null,
+        PH_CONTACT_DATA: null,
       },
     };
   }
 }
 
-export default function Home({ PH_ICONS_DATA, PH_INDEX_DATA }) {
+export default function Contact({ PH_ICONS_DATA, PH_CONTACT_DATA }) {
   const router = useRouter();
 
   return (
     <div id="PAGE">
-      <div id="PAGE_CNT">Home</div>
+      <div id="PAGE_CNT">Contact</div>
     </div>
   );
 }

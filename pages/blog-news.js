@@ -11,7 +11,7 @@ import path from "path";
 // Component Imports
 
 // Style Imports
-import "../assets/styles/modules/Index/Index.module.css";
+import "../assets/styles/modules/BlogNews/BlogNews.module.css";
 
 export async function getServerSideProps() {
   const PAGE_HEAD_DATA_DIRECTORY = "public/data/Page_Head_Data/";
@@ -23,26 +23,26 @@ export async function getServerSideProps() {
     PAGE_HEAD_DATA_DIRECTORY,
     "PH_Icons.json"
   );
-  const PH_INDEX_DATA_FP = path.join(
+  const PH_BLOG_NEWS_DATA_FP = path.join(
     process.cwd(),
     PAGE_HEAD_DATA_DIRECTORY,
-    "PH_Index.json"
+    "PH_BlogNews.json"
   );
 
   const PH_ICONS_DATA_FC = fs.readFileSync(PH_ICONS_DATA_FP, UTF8);
-  const PH_INDEX_DATA_FC = fs.readFileSync(PH_INDEX_DATA_FP, UTF8);
+  const PH_BLOG_NEWS_DATA_FC = fs.readFileSync(PH_BLOG_NEWS_DATA_FP, UTF8);
 
   let PH_ICONS_DATA = undefined;
-  let PH_INDEX_DATA = undefined;
+  let PH_BLOG_NEWS_DATA = undefined;
 
   try {
     PH_ICONS_DATA = JSON.parse(PH_ICONS_DATA_FC);
-    PH_INDEX_DATA = JSON.parse(PH_INDEX_DATA_FC);
+    PH_BLOG_NEWS_DATA = JSON.parse(PH_BLOG_NEWS_DATA_FC);
 
     return {
       props: {
         PH_ICONS_DATA,
-        PH_INDEX_DATA,
+        PH_BLOG_NEWS_DATA,
       },
     };
   } catch (error) {
@@ -51,18 +51,18 @@ export async function getServerSideProps() {
     return {
       props: {
         PH_ICONS_DATA: null,
-        PH_INDEX_DATA: null,
+        PH_BLOG_NEWS_DATA: null,
       },
     };
   }
 }
 
-export default function Home({ PH_ICONS_DATA, PH_INDEX_DATA }) {
+export default function BlogNews({ PH_ICONS_DATA, PH_BLOG_NEWS_DATA }) {
   const router = useRouter();
 
   return (
     <div id="PAGE">
-      <div id="PAGE_CNT">Home</div>
+      <div id="PAGE_CNT">Blog/News</div>
     </div>
   );
 }
