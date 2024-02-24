@@ -13,7 +13,7 @@ This is Bobby Torok's website for his PC Repair niche.
 ---
 
 Domain:
-Netlify Server: https://silly-puppy-27a32b.netlify.app/
+Netlify Server: https://darling-kulfi-8e2871.netlify.app/
 
 ===
 
@@ -27,6 +27,6 @@ Netlify Server: https://silly-puppy-27a32b.netlify.app/
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6542bdb3-c9ec-427e-b71d-52c482df3acf/deploy-status)](https://app.netlify.com/sites/silly-puppy-27a32b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e07bf2d8-7655-4456-b303-ea7fc6dcb78e/deploy-status)](https://app.netlify.com/sites/darling-kulfi-8e2871/deploys)
 
 ===

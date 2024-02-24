@@ -9,6 +9,7 @@ import path from "path";
 // Data/Functions/Images Imports
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/AboutServices/AboutServices.module.css";
@@ -68,6 +69,10 @@ export default function AboutServices({
 
   return (
     <div id="PAGE">
+      <PageHead
+        page_head_data={PH_ABOUT_SERVICES_DATA}
+        icons_data={PH_ICONS_DATA}
+      />
       <div id="PAGE_CNT">About/Services</div>
     </div>
   );

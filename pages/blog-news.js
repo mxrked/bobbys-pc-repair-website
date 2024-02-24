@@ -9,6 +9,7 @@ import path from "path";
 // Data/Functions/Images Imports
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/BlogNews/BlogNews.module.css";
@@ -62,6 +63,7 @@ export default function BlogNews({ PH_ICONS_DATA, PH_BLOG_NEWS_DATA }) {
 
   return (
     <div id="PAGE">
+      <PageHead page_head_data={PH_BLOG_NEWS_DATA} icons_data={PH_ICONS_DATA} />
       <div id="PAGE_CNT">Blog/News</div>
     </div>
   );

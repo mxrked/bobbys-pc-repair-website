@@ -1,0 +1,38 @@
+[
+  {
+    "portfolioItemID": "PI_1",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  },
+  {
+    "portfolioItemID": "PI_2",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  },
+  {
+    "portfolioItemID": "PI_3",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  },
+  {
+    "portfolioItemID": "PI_4",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  },
+  {
+    "portfolioItemID": "PI_5",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  },
+  {
+    "portfolioItemID": "PI_6",
+    "portfolioItemName": "Item Name",
+    "portfolioItemDesc": "Item Description",
+    "portfolioItemImg": "#"
+  }
+]

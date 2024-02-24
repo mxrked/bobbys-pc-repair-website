@@ -9,6 +9,7 @@ import path from "path";
 // Data/Functions/Images Imports
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/Contact/Contact.module.css";
@@ -62,6 +63,7 @@ export default function Contact({ PH_ICONS_DATA, PH_CONTACT_DATA }) {
 
   return (
     <div id="PAGE">
+      <PageHead page_head_data={PH_CONTACT_DATA} icons_data={PH_ICONS_DATA} />
       <div id="PAGE_CNT">Contact</div>
     </div>
   );
